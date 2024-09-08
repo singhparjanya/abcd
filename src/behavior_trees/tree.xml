@@ -1,0 +1,14 @@
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <Fallback name="Root">
+      <!-- Sequence to check battery and process the command -->
+      <Sequence name="CheckBatteryAndProcessCommand">
+        <CheckBattery />
+        <GoalPublisher />
+      </Sequence>
+      <!-- Node to publish charging station coordinates if battery is low -->
+      <ChargingStationPublisher />
+    </Fallback>
+  </BehaviorTree>
+</root>
+
