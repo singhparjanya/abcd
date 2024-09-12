@@ -107,8 +107,8 @@ Troubleshooting
 * **Multi-robot simulation lag:** Try reducing the simulation update rate or the number of robots in the simulation.
 * **ROS2 node errors:** Ensure you have sourced the workspace before running any commands:
 
-    source install/setup.bash
+      source install/setup.bash
 
 * **Missing Dependencies:** Ensure all dependencies are installed with:
 
-    rosdep install --from-paths src -r -y
+      rosdep install --from-paths src -r -y
