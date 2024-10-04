@@ -15,14 +15,16 @@ Table of Contents
 Introduction
 ------------
 
-The project implements a multi-robot setup using TurtleBot3 robots in a Gazebo simulation. The robots can navigate autonomously, interpret commands, and make decisions based on behavior trees. This system is designed to simulate real-world human-robot interactions, where multiple robots work in a shared environment.
+The project implements a multi-robot setup using TurtleBot3 robots in a Gazebo simulation environment. The robots navigate autonomously, interpret commands through speech recognition, and make decisions based on behavior trees. This system simulates real-world human-robot interactions, where multiple robots work in a shared environment, executing commands through natural language inputs.
+
+The speech-to-command module was developed using a custom-trained SpaCy model on a multilingual dataset (English and Hindi) of 1.5 lakh text-label pairs. The model effectively converts spoken language into actionable commands for the robots, allowing for intuitive and efficient communication between humans and robots.
 
 Project Features
 ----------------
 
 * Multi-Robot Coordination: Multiple TurtleBot3 robots navigating autonomously using the Nav2 stack.
 * Behavior Tree-based Decision Making: Robots use behavior trees for task execution and decision-making.
-* Command Execution: Commands are sent via ROS2 nodes to control robot behaviors.
+* Multilingual Speech-to-Command Execution: Spoken commands in English and Hindi are translated into text, which is then interpreted by the model to generate corresponding robot commands that are sent to ROS2 for execution.
 * Gazebo Simulation: Full simulation of robot navigation and coordination in a virtual environment.
 
 Dependencies
